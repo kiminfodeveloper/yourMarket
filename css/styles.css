@@ -37,10 +37,16 @@ i {
     gap: 2rem;
 }
 
+.main-image-background {
+    background-image: url("../img/banner-main.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--secondary-text-color);
+}
+
 .transition-text {
     padding: 1rem;
-    color: #000;
-
+    color: var(--secondary-text-color);
   }
 
 #rotate {
