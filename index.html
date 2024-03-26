@@ -1,251 +1,855 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Your Market</title>
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <!-- framework -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body>
-    <!-- header -->
-    <header>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#"><img class="logo-nav" src="img/logo preto.PNG" alt=""></a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#header-primary">Início</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section-services">Serviços</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section-about">Sobre</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section-whoweare">Quem Somos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#section-contact-us">Contato</a>
-                  </li>
-                </ul>
-              </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <title>Your Market</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- framework -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01"
+                        aria-controls="navbarTogglerDemo01"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarTogglerDemo01"
+                    >
+                        <a class="navbar-brand" href="#"
+                            ><img
+                                class="logo-nav"
+                                src="img/logo preto.PNG"
+                                alt=""
+                        /></a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#header-primary"
+                                    >Início</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-services"
+                                    >Serviços</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-about"
+                                    >Sobre</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-whoweare"
+                                    >Quem Somos</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-contact-us"
+                                    >Contato</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="header-primary">
+                <div class="main-image-background">
+                    <img id="rotate" src="img/icon-shadow.png" alt="logo" />
+                    <div class="transition-text">
+                        <h1 id="transition-text">
+                            Bem vindo(a) ao Your Market
+                        </h1>
+                    </div>
+                    <a href="#"
+                        ><button class="btn-whats">
+                            Quero no meu condomínio
+                        </button></a
+                    >
+                    <p>O mercado ao lado do seu lar.</p>
+                </div>
+                <img class="logo-main" src="img/logo.PNG" alt="Logo Branco" />
             </div>
-          </nav>
-          <div id="header-primary">
-            <div class="main-image-background">
-              <img id="rotate" src="img/icon.png" alt="logo">
-              <div class="transition-text">
-                <h1 id="transition-text">Bem vindo(a) ao Your Market</h1>
-              </div>
-              <a href=""><button class="btn-whats">Quero no meu condomínio</button></a>
-              <p>O mercado ao lado do seu lar.</p>
+        </header>
+        <!-- main section -->
+        <main id="main-content">
+            <section id="section-description">
+                <img src="img/banner1.png" alt="Imagem ilustrativa" />
+                <h3>A praticidade que você procurava</h3>
+                <p>
+                    A YourMarket leva comodidade e segurança, para que moradores
+                    não necessitem ir até a rua para buscar produtos que
+                    necessita, podendo ser mais seguro ainda quando pensamos nos
+                    filhos adolescentes, nos idosos e até mesmo crianças que
+                    podem consumir os itens no conforto e segurança do
+                    condomínio.
+                </p>
+            </section>
+            <section id="mockaup">
+                <h3>Acessibilidade total no seu Smartphone!</h3>
+                <img
+                    class="mockaup-mobile"
+                    src="img/mockup iphone.png"
+                    alt="Smartphone"
+                />
+            </section>
+        </main>
+        <!-- carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
             </div>
-            <img class="logo-main" src="img/logo.PNG" alt="Logo Branco">
-          </div>
-    </header>
-    <!-- main section -->
-    <main id="main-content">
-        <section id="section-description">
-            <img src="img/banner1.png" alt="Imagem ilustrativa">
-            <h3>Sem filas, sem caixa e aberto 24h</h3>
-            <p>Você morador tem acesso a qualquer hora do dia/noite 
-                a uma grande variedade de produtos, na nossa loja de 
-                conveniência autônoma.
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="img/carousel1.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="img/carousel2.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="img/carousel3.png"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden"></span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden"></span>
+            </button>
+        </div>
+        <!-- back to top -->
+        <a class="back-to-top" onclick="scrollToTop()"
+            ><i
+                class="bi bi-arrow-up-circle-fill"
+                style="color: #ff7312; cursor: pointer; font-size: 2rem"
+            ></i
+        ></a>
+        <!-- model stores -->
+        <section id="section-model-stores">
+            <h3 class="title-primary-section">Modelo de Lojas</h3>
+            <div class="model-stores">
+                <img src="img/model-store.jpg" alt="Mercado 1" />
+                <img src="img/model-store2.jpg" alt="Mercado 2" />
+                <img src="img/model-store3.jpg" alt="Mercado 3" />
+                <img src="img/model-store4.jpg" alt="Mercado 4" />
+            </div>
+            <p>
+                O condomínio pode conceder uma sala, corredor ou espaço
+                compartilhado com outra finalidade (salão de jogos, por exemplo)
+                a partir de 5m².
             </p>
+            <a href=""><button class="btn-whats">Fale conosco</button></a>
         </section>
-    </main>
-    <!-- carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/carousel1.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/carousel2.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/carousel3.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden"></span>
-      </button>
-    </div>
-    <!-- back to top -->
-    <a class="back-to-top" onclick="scrollToTop()"><i class="bi bi-arrow-up-circle-fill" style=" color: #FF7312; cursor: pointer; font-size: 2rem;"></i></a>
-    <!--  services section -->
-    <section id="section-services">
-        <h3>Serviços</h3>
-        <img src="img/banner2.png" alt="Imagem do Mercado">
-        <div id="cards">
-          <div class="card" style="width: 18rem; margin-top: 1rem;">
-            <i class="bi bi-wechat"></i>
-            <div class="card-body">
-              <h5 class="card-title">Parceria com grandes fornecedores</h5>
-              <p class="card-text">Possuímos os melhores fornecedores, negociações e mix de produtos para atender nossos clientes.</p>
+        <!-- benefits store -->
+        <section id="section-benefits-store">
+            <h3 class="title-secondary-section">Vantagens</h3>
+            <div id="cards">
+                <div class="card" style="width: 18rem; margin-top: 1rem">
+                    <i class="bi bi-wallet2"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Sem custos</h5>
+                        <p class="card-text">
+                            Não cobramos pela montagem e nem mensalidade.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div id="cards">
-          <div class="card" style="width: 18rem; margin-top: 1rem;">
-            <i class="bi bi-shield-check"></i>
-            <div class="card-body">
-              <h5 class="card-title">Tecnologia de monitoramento por câmeras de segurança</h5>
-              <p class="card-text">Esse knowhow é um ponto chave em um mercado autônomo, pois possuímos sistemas de segurança que diminuem o risco de furtos.</p>
+            <div id="cards">
+                <div class="card" style="width: 18rem; margin-top: 1rem">
+                    <i class="bi bi-emoji-sunglasses-fill"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Fácil de usar</h5>
+                        <p class="card-text">
+                            Caixa físico com sistema de fácil uso: escolheu,
+                            escaneou, pagou.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div id="cards">
-          <div class="card" style="width: 18rem; margin-top: 1rem;">
-            <i class="bi bi-shop"></i>
-            <div class="card-body">
-              <h5 class="card-title">Mix de Produtos e Vendas</h5>
-              <p class="card-text">Suporte na escolha e atualização do mix de produtos conforme o perfil do local e clientes.</p>
+            <div id="cards">
+                <div class="card" style="width: 18rem; margin-top: 1rem">
+                    <i class="bi bi-search-heart"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Valorização</h5>
+                        <p class="card-text">
+                            Agrega mais valor ao condomínio, trazendo conforto
+                            aos moradores.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div id="cards">
-          <div class="card" style="width: 18rem; margin-top: 1rem;">
-            <i class="bi bi-robot"></i>
-            <div class="card-body">
-              <h5 class="card-title">Compra autônoma</h5>
-              <p class="card-text">Aqui no mercado Your Market, você pode fazer compras 24h por dia, de forma rápida e simples e o mais importante, autônoma</p>
+            <div id="cards">
+                <div class="card" style="width: 18rem; margin-top: 1rem">
+                    <i class="bi bi-shop-window"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Conveniência</h5>
+                        <p class="card-text">
+                            Nossos mercados autônomos funcionam 7 dias por
+                            semana, 24h por dia.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-    </section>
-    <!-- section about -->
-    <section id="section-about">
-      <h3>Sobre</h3>
-      <img src="img/banner3.png" alt="Carrrinho com casa freepik.com">
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="margin-top: 2rem;">
-              Nossa história
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">João era um homem cheio de ideias. Ao se mudar para um condomínio, notou que os moradores tinham dificuldade em encontrar produtos básicos sem sair de casa.
-              Teve a ideia de criar um mercado dentro do próprio condomínio! Começou vendendo alguns produtos básicos em uma barraca na garagem. A iniciativa foi um sucesso!
-              Com o tempo, a barraca se tornou um mercado com uma ampla variedade de produtos e serviços. João inovou ao dar autonomia aos moradores</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Facilidade
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Facilidade na compra, ao pegar o seu produto que está em falta no seu lar, basta você ir até o nosso terminal,
-              perto à saída da loja, e passar o produto no nosso scanner de leitor óptico para finalizar sua compra.
+            <div id="cards">
+                <div class="card" style="width: 18rem; margin-top: 1rem">
+                    <i class="bi bi-shield-exclamation"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Responsabilidade</h5>
+                        <p class="card-text">
+                            Venda de bebidas alcoólicas mediante cadastro no
+                            aplicativo ou autorização retirada na portaria.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Pagamentos
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Aceitamos todos os metódos de pagamentos modernos, no momento não trabalhamos com dinheiro, pois a máquina em especifico não possui a contagem de cédulas.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- whoweare -->
-    <section id="section-whoweare">
-      <h3>Quem somos?</h3>
-      <img src="img/banner4.png" alt="Mulher">
-      <p>
-        <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" style="margin-top: 1rem;">
-          Uma breve explicação clicando aqui!
-        </button>
-      </p>
-      <div style="min-height: 120px;">
-        <div class="collapse collapse-horizontal" id="collapseWidthExample">
-          <div class="card card-body" style="width: 300px; color: #000;">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda error mollitia, neque amet porro tenetur omnis, temporibus voluptate cumque, deserunt recusandae pariatur doloribus magnam quae aut! Adipisci ratione possimus cupiditate?
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact-us -->
-    <section id="section-contact-us">
-      <h3>Fale conosco</h3>
-      <div class="contact-us">
-        <div class="contact-subtitle">
-          <i class="bi bi-person-lines-fill" style="margin: auto;"></i>
-          <p>Entre em contato:</p>
-        </div>
-        <div class="form-container-contact">
-          <h4>Número de telefone: </h4>
-          <p><a href="#"><i class="bi bi-whatsapp" style="font-size: 1rem; margin-right: 0.5rem;"></i></a> (11) 9 9999-9999</p>
-        </div>
-        <div class="form-container-contact">
-          <h4>E-mail: </h4>
-          <p><a href="#"><i class="bi bi-envelope" style="font-size: 1rem; margin-right: 0.5rem;"></i></a> yourmarket@gmail.com</p>
-        </div>
-        <div class="contact-subtitle">
-          <i class="bi bi-chat-dots-fill" style="margin: auto;"></i>
-          <p style="font-size: 1rem;">Envie uma mensagem direta</p>
-        </div>
-        <div class="form-container-contact">
-          <h4>Enviar mensagem: </h4>
-          <a href=""><button class="btn-whats">WhatsApp <i class="bi bi-whatsapp" style="font-size: 1.5rem; margin-left: 0.5rem;"></i></button></a>
-        </div>
-      </div>
-    </section>
-    <!-- footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-muted">© 2024 TODOS OS DIREITOS RESERVADOS, Your Market</span>
-      </div>
-  
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-whatsapp" style="font-size: 2rem; margin: 1rem;"></i></use></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram" style="font-size: 2rem; margin: 1rem;"></i></use></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook" style="font-size: 2rem; margin: 1rem;"></i></use></svg></a></li>
-      </ul>
-    </footer>
-    <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-    <script src="js/scripts.js" defer></script>
-</body>
+            <a href=""><button class="btn-whats-secondary">Eu quero</button></a>
+        </section>
+        <!--  services section -->
+        <section id="section-services">
+            <h3 class="title-primary-section">Serviços</h3>
+            <img src="img/banner2.png" alt="Imagem do Mercado" />
+            <div id="cards">
+                <div class="card" style="width: 18rem; margin-top: 1rem">
+                    <i class="bi bi-wechat"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Parceria com grandes fornecedores
+                        </h5>
+                        <p class="card-text">
+                            Possuímos os melhores fornecedores, negociações e
+                            mix de produtos para atender nossos clientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="cards">
+                <div class="card" style="width: 18rem; margin-top: 1rem">
+                    <i class="bi bi-shield-check"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Tecnologia de monitoramento por câmeras de segurança
+                        </h5>
+                        <p class="card-text">
+                            Esse knowhow é um ponto chave em um mercado
+                            autônomo, pois possuímos sistemas de segurança que
+                            diminuem o risco de furtos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="cards">
+                <div class="card" style="width: 18rem; margin-top: 1rem">
+                    <i class="bi bi-shop"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Mix de Produtos e Vendas</h5>
+                        <p class="card-text">
+                            Suporte na escolha e atualização do mix de produtos
+                            conforme o perfil do local e clientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="cards">
+                <div class="card" style="width: 18rem; margin-top: 1rem">
+                    <i class="bi bi-robot"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Compra autônoma</h5>
+                        <p class="card-text">
+                            Aqui no mercado Your Market, você pode fazer compras
+                            24h por dia, de forma rápida e simples e o mais
+                            importante, autônoma
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section about -->
+        <section id="section-about">
+            <h3 class="title-secondary-section">Sobre</h3>
+            <img src="img/banner3.png" alt="Carrrinho com casa freepik.com" />
+
+            <p>
+                <button
+                    class="btn btn-about"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseWidthExample"
+                    aria-expanded="false"
+                    aria-controls="collapseWidthExample"
+                    style="margin-top: 1rem"
+                >
+                    Saiba mais sobre nós clicando aqui
+                </button>
+            </p>
+            <div style="min-height: 120px">
+                <div
+                    class="collapse collapse-horizontal"
+                    id="collapseWidthExample"
+                >
+                    <div
+                        class="card card-body"
+                        style="
+                            width: 300px;
+                            color: #fff;
+                            background-color: #f514ba;
+                        "
+                    >
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Assumenda error mollitia, neque amet porro tenetur
+                        omnis, temporibus voluptate cumque, deserunt recusandae
+                        pariatur doloribus magnam quae aut! Adipisci ratione
+                        possimus cupiditate?
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- whoweare -->
+        <section id="section-whoweare">
+            <h3 class="title-primary-section">Quem somos?</h3>
+            <img src="img/banner4.png" alt="Mulher" />
+            <p>
+                <button
+                    class="btn btn-about-secondary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseWidthExample"
+                    aria-expanded="false"
+                    aria-controls="collapseWidthExample"
+                    style="margin-top: 1rem"
+                >
+                    Sobre nossa empresa
+                </button>
+            </p>
+            <div style="min-height: 120px">
+                <div
+                    class="collapse collapse-horizontal"
+                    id="collapseWidthExample"
+                >
+                    <div
+                        class="card card-body"
+                        style="
+                            width: 300px;
+                            color: #fff;
+                            background-color: #ff7312;
+                        "
+                    >
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Assumenda error mollitia, neque amet porro tenetur
+                        omnis, temporibus voluptate cumque, deserunt recusandae
+                        pariatur doloribus magnam quae aut! Adipisci ratione
+                        possimus cupiditate?
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section evidence -->
+        <section id="section-evidence">
+            <h3 class="title-secondary-section">Nossas evidências</h3>
+            <div class="quote-texts">
+                <div class="quote-text">
+                    <h4>Jonas Junior</h4>
+                    <i class="bi bi-quote"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempora ad id non eos deserunt, perspiciatis nesciunt
+                        illo maxime iste omnis eum doloremque ut explicabo vitae
+                        magnam, obcaecati dignissimos itaque voluptatem.
+                    </p>
+                    <i class="bi bi-quote"></i>
+                </div>
+                <div class="quote-text">
+                    <h4>Jonas Junior</h4>
+                    <i class="bi bi-quote"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempora ad id non eos deserunt, perspiciatis nesciunt
+                        illo maxime iste omnis eum doloremque ut explicabo vitae
+                        magnam, obcaecati dignissimos itaque voluptatem.
+                    </p>
+                    <i class="bi bi-quote"></i>
+                </div>
+                <div class="quote-text">
+                    <h4>Jonas Junior</h4>
+                    <i class="bi bi-quote"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempora ad id non eos deserunt, perspiciatis nesciunt
+                        illo maxime iste omnis eum doloremque ut explicabo vitae
+                        magnam, obcaecati dignissimos itaque voluptatem.
+                    </p>
+                    <i class="bi bi-quote"></i>
+                </div>
+                <div class="quote-text">
+                    <h4>Jonas Junior</h4>
+                    <i class="bi bi-quote"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempora ad id non eos deserunt, perspiciatis nesciunt
+                        illo maxime iste omnis eum doloremque ut explicabo vitae
+                        magnam, obcaecati dignissimos itaque voluptatem.
+                    </p>
+                    <i class="bi bi-quote"></i>
+                </div>
+            </div>
+        </section>
+        <!-- section faq -->
+        <section id="section-faq">
+            <h3 class="btn-faq">Perguntas frequentes</h3>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item btn-faq-show-text">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed btn-faq-show-text"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne"
+                            style="margin-top: 2rem"
+                        >
+                            Qual o custo de implantação para o condomínio?
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            O custo de implantação é todo do licenciado
+                            SmartStore. O condomínio apenas concede um espaço a
+                            partir de 5mts quadrados com uma tomada. O espaço
+                            não necessariamente precisa ser fechado, ficando a
+                            critério do licenciado e do síndico essa definição.
+                            Em casos específicos, caso seja da vontade do
+                            síndico, poderá ser colocado um container ou poderá
+                            ter alguma divisão de DryWall em alguma sala já
+                            existente com intuito de dividi-la ao meio por
+                            exemplo. Sempre com custo contemplado pelo
+                            licenciado.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item btn-faq-show-text">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed btn-faq-show-text"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseTwo"
+                        >
+                            Qual o custo de mensalidades para o condomínio?
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            Zero mensalidades. O condomínio não realiza nenhum
+                            pagamento mensal para ter uma SmartStore dentro do
+                            seu condomínio.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item btn-faq-show-text">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed btn-faq-show-text"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseThree"
+                        >
+                            O morador precisa pagar alguma coisa?
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            Também não. O morador não paga nenhum tipo de taxa
+                            ou mensalidade para utilizar o sistema. Todo o uso é
+                            gratuito e o morador só paga mesmo pelas compras que
+                            realizar na SmartStore.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item btn-faq-show-text">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed btn-faq-show-text"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseFour"
+                        >
+                            Quem cuida da organização e abastecimento?
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseFour"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            Toda a organização, montagem, manutenção,
+                            abastecimento e limpeza é feita pelo licenciado. O
+                            condomínio apenas irá usufruir da comodidade de
+                            facilidade da SmartStore.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item btn-faq-show-text">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed btn-faq-show-text"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseFive"
+                        >
+                            Os preços são justos?
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseFive"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            Sim, as compras são realizadas em atacadista e
+                            trabalhamos com um markup suficiente para acobertar
+                            as despesas mensais da loja com impostos, despesas
+                            com contabilidade, comodato dos sistemas e royalties
+                            pelo uso da licença. Com isso trabalhamos sempre em
+                            preço nivelado ou mais baixos do que as padarias,
+                            mercadinhos e conveniências da região.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item btn-faq-show-text">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed btn-faq-show-text"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseSix"
+                        >
+                            Qual o espaço ideal que preciso ter?
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseSix"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            Todo espaço pode ser avaliado. A premissa é ter
+                            proteção contra sol e chuva, e também ficar em local
+                            que só seja acessado pelos moradores (salão de
+                            festas por exemplo recebe visitantes). O tamanho
+                            pode variar de acordo com a opção disponível no
+                            condomínio, sempre observando pelo menos um espaço
+                            de 5 metros quadrados (que não precisa ser
+                            necessariamente quadrado). Além disso há condomínios
+                            que possuem salas livres, que torna o espaço ainda
+                            mais interessante, ficando bem isolado do ambiente
+                            externo e possibilitando por exemplo colocar uma
+                            entrada por senha ou por token rfid (aproximação).
+                            Além disso avaliamos também instalação de
+                            containers, sempre sem custos para seu condomínio.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item btn-faq-show-text">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed btn-faq-show-text"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSeven"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseSeven"
+                        >
+                            Meu condomínio não tem espaço, como faço para ter um
+                            YourMarket?
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseSeven"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            Nenhum condomínio se preparou para esse avanço de
+                            mercado em comodidade, no entanto todo espaço pode
+                            ser avaliado. Existem SmartStore que foram montadas
+                            na varanda de passagem de uma área comum, há outras
+                            que foram montadas no salão de jogos com uma divisão
+                            pequena de DryWall, há outras que foram montadas na
+                            divisão de uma sala que era da zeladoria e também em
+                            conatainer de 3 e de 6 metros. Veja que todo espaço
+                            pode ser pensado. A premissa recomendada é que nunca
+                            tenha modificações ou construções que exijam grande
+                            esforço e burocracias.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item btn-faq-show-text">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed btn-faq-show-text"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseEight"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseEight"
+                        >
+                            Como é definida a lista de produtos?
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseEight"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            Temos uma grande rede de lojas em operação, com
+                            isso, conseguimos ter a visão exata dos produtos
+                            mais consumidos pelos moradores e dar prioridade a
+                            esses itens. No entanto, temos um canal em cada
+                            condomínio via aplicativo ou portal para moradores
+                            darem sugestões de itens para avaliação.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item btn-faq-show-text">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed btn-faq-show-text"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseNine"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseNine"
+                        >
+                            Como é definida a lista de produtos?
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseNine"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            Temos uma grande rede de lojas em operação, com
+                            isso, conseguimos ter a visão exata dos produtos
+                            mais consumidos pelos moradores e dar prioridade a
+                            esses itens. No entanto, temos um canal em cada
+                            condominio via aplicativo ou portal para moradores
+                            darem sugestões de itens para avaliação.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact-us -->
+        <section id="section-contact-us">
+            <h3 class="title-secondary-section">Fale conosco</h3>
+            <div class="contact-us">
+                <div class="contact-subtitle">
+                    <i class="bi bi-person-lines-fill" style="margin: auto"></i>
+                    <p>Entre em contato:</p>
+                </div>
+                <div class="form-container-contact">
+                    <h4>Número de telefone:</h4>
+                    <p>
+                        <a href="#"
+                            ><i
+                                class="bi bi-whatsapp"
+                                style="font-size: 1rem; margin-right: 0.5rem"
+                            ></i
+                        ></a>
+                        (11) 9 9999-9999
+                    </p>
+                </div>
+                <div class="form-container-contact">
+                    <h4>E-mail:</h4>
+                    <p>
+                        <a href="#"
+                            ><i
+                                class="bi bi-envelope"
+                                style="font-size: 1rem; margin-right: 0.5rem"
+                            ></i
+                        ></a>
+                        yourmarket@gmail.com
+                    </p>
+                </div>
+                <div class="contact-subtitle">
+                    <i class="bi bi-chat-dots-fill" style="margin: auto"></i>
+                    <p style="font-size: 1rem">Envie uma mensagem direta</p>
+                </div>
+                <div class="form-container-contact">
+                    <h4>Enviar mensagem:</h4>
+                    <a href=""
+                        ><button class="btn-whats">
+                            WhatsApp
+                            <i
+                                class="bi bi-whatsapp"
+                                style="font-size: 1.5rem; margin-left: 0.5rem"
+                            ></i></button
+                    ></a>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer
+            class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+            <div class="col-md-4 d-flex align-items-center">
+                <a
+                    href="/"
+                    class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+                >
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted"
+                    >© 2024 TODOS OS DIREITOS RESERVADOS, Your Market</span
+                >
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted" href="#"
+                        ><i
+                            class="bi bi-whatsapp"
+                            style="font-size: 2rem; margin: 1rem"
+                        ></i
+                    ></a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#"
+                        ><i
+                            class="bi bi-instagram"
+                            style="font-size: 2rem; margin: 1rem"
+                        ></i
+                    ></a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#"
+                        ><i
+                            class="bi bi-facebook"
+                            style="font-size: 2rem; margin: 1rem"
+                        ></i
+                    ></a>
+                </li>
+            </ul>
+        </footer>
+        <!-- script -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+            defer
+        ></script>
+        <script src="js/scripts.js" defer></script>
+    </body>
 </html>
