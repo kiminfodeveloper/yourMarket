@@ -49,18 +49,21 @@ i {
     color: var(--secondary-text-color);
     width: 100%;
     height: 100vh;
+    text-align: center;
 }
 
 .transition-text {
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     color: var(--secondary-text-color);
-    text-shadow: 1px 1px 2px var(--secondary-color),
-        0 0 1em var(--secondary-color), 0 0 0.2em var(--secondary-color);
-    filter: drop-shadow(0 0 2em var(--secondary-color));
+    text-shadow: 1px 1px 2px var(--primary-text-color);
 }
 
-.shadow {
-    text-shadow: 2px 2px 2px var(--primary-text-color);
+#transition-text {
+    font-size: 2rem;
+    width: 250px;
+    margin-top: 0.5rem;
 }
 
 .mockaup-mobile {
@@ -136,6 +139,7 @@ i {
     z-index: 1;
     position: fixed;
     right: 1rem;
+    border: 1px solid var(--primary-text-color);
     bottom: 1rem;
     line-height: 0;
     visibility: hidden;
@@ -203,6 +207,7 @@ i {
 }
 
 .title-primary-section {
+    text-transform: uppercase;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -214,12 +219,12 @@ i {
 }
 
 .title-primary-section:hover {
-    background-color: #ff9d4e;
-    border-bottom: 4px solid #0000009d;
-    border-right: 4px solid #0000009d;
+    background-color: var(--secondary-text-color);
+    color: var(--main-color);
 }
 
 .title-secondary-section {
+    text-transform: uppercase;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -231,9 +236,8 @@ i {
 }
 
 .title-secondary-section:hover {
-    background-color: #ff3fcc;
-    border-bottom: 4px solid #0000009d;
-    border-right: 4px solid #0000009d;
+    background-color: var(--secondary-text-color);
+    color: var(--secondary-color);
 }
 
 .main-img-services {
@@ -248,6 +252,8 @@ i {
     width: 300px;
     align-items: center;
     justify-content: center;
+    border-radius: 1rem;
+    background-color: var(--secondary-text-color);
 }
 
 .suppliers img {
@@ -255,7 +261,6 @@ i {
 }
 
 .image-suppliers {
-    border: 5px solid var(--secondary-color);
     padding: 1rem;
 }
 
@@ -320,6 +325,12 @@ i {
     margin: 0 auto;
     border: 1px solid var(--main-color);
     border-radius: 2rem;
+    color: var(--main-color);
+    background-color: var(--secondary-text-color);
+}
+
+.quote-text:hover {
+    filter: drop-shadow(0 0 1em var(--main-color));
 }
 
 .quote-text h4 {
@@ -340,7 +351,6 @@ i {
 .btn-faq {
     display: flex;
     font-weight: bold;
-    width: 300px;
     background-color: var(--secondary-color);
     height: 50px;
     justify-content: center;
@@ -350,9 +360,9 @@ i {
 }
 
 .btn-faq:hover {
-    background-color: #ff9d4e;
-    border-bottom: 4px solid #0000009d;
-    border-right: 4px solid #0000009d;
+    background-color: var(--secondary-text-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
 }
 
 .btn-faq-show-text {
@@ -413,38 +423,42 @@ i {
     color: var(--secondary-text-color);
     background-color: var(--secondary-color);
     width: 200px;
+    height: 50px;
     border-radius: 1rem;
+    text-transform: uppercase;
     border: none;
-    padding: 1rem;
-    margin: 1rem;
+    margin: 0.75rem;
+    font-size: 1rem;
     font-weight: bold;
-    transition: 1s;
+    transition: 3s;
 }
 
 .btn-whats:hover {
-    background-color: #ff9d4e;
-    font-size: 1.3rem;
-    border-bottom: 4px solid #0000009d;
-    border-right: 4px solid #0000009d;
+    background-color: var(--secondary-text-color);
+    border: 1px solid var(--secondary-color);
+    filter: drop-shadow(0 0 2em var(--secondary-color));
+    color: var(--main-color);
 }
 
 .btn-whats-secondary {
     color: var(--secondary-text-color);
     background-color: var(--main-color);
     width: 200px;
+    height: 50px;
     border-radius: 1rem;
+    text-transform: uppercase;
     border: none;
-    padding: 1rem;
+    margin: 0.75rem;
+    font-size: 1rem;
     font-weight: bold;
-    transition: 1s;
-    margin-top: 1rem;
+    transition: 3s;
 }
 
 .btn-whats-secondary:hover {
-    background-color: #ff3fcc;
-    font-size: 1.3rem;
-    border-bottom: 4px solid #0000009d;
-    border-right: 4px solid #0000009d;
+    background-color: var(--secondary-text-color);
+    border: 1px solid var(--secondary-color);
+    filter: drop-shadow(0 0 2em var(--main-color));
+    color: var(--secondary-color);
 }
 
 .btn-about {
@@ -485,18 +499,18 @@ i {
     }
 
     .btn-whats {
-        width: 350px;
-        height: 100px;
-        font-size: 1.5rem;
+        width: 150px;
+        height: 70px;
+        font-size: 1rem;
     }
     .btn-whats:hover {
         filter: drop-shadow(0 0 2em var(--secondary-color));
     }
 
     .btn-whats-secondary {
-        width: 350px;
-        height: 100px;
-        font-size: 1.5rem;
+        width: 150px;
+        height: 70px;
+        font-size: 1rem;
     }
     .btn-whats-secondary:hover {
         filter: drop-shadow(0 0 2em var(--main-color));
@@ -505,6 +519,7 @@ i {
     .title-primary-section {
         width: 400px;
         height: 100px;
+        margin-bottom: 3rem;
         text-transform: uppercase;
         font-weight: bold;
     }
@@ -534,15 +549,19 @@ i {
         margin: auto;
     }
     #section-description img {
-        width: 300px;
+        width: 250px;
+        margin-right: 1rem;
     }
     #section-description h3 {
         font-size: 2rem;
         font-weight: bolder;
     }
     #section-description p {
+        color: var(--primary-text-color);
+        border-radius: 1rem;
+        background: var(--secondary-text-color);
         font-size: 1.5rem;
-        padding: 1rem;
+        padding: 2rem;
     }
     /*  */
     #mockaup {
@@ -564,7 +583,7 @@ i {
 
     #section-model-stores p {
         font-size: 1.5rem;
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .model-stores img {
@@ -616,7 +635,7 @@ i {
 
     .quote-texts {
         width: 700px;
-        height: 475px;
+        height: 500px;
         margin-top: 1rem;
     }
 
