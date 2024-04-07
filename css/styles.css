@@ -58,12 +58,13 @@ i {
     display: flex;
     color: var(--secondary-text-color);
     text-shadow: 1px 1px 2px var(--primary-text-color);
+    margin-top: 0.7rem;
+    padding: 0.5rem;
 }
 
 #transition-text {
-    font-size: 2rem;
-    width: 250px;
-    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    width: 150px;
 }
 
 .mockaup-mobile {
@@ -241,7 +242,8 @@ i {
 }
 
 .main-img-services {
-    width: 200px;
+    border-radius: 1rem;
+    width: 250px;
 }
 
 .suppliers {
@@ -282,7 +284,9 @@ i {
 }
 
 #section-about img {
+    margin: 1rem;
     width: 250px;
+    border-radius: 1rem;
 }
 
 #section-whoweare {
@@ -296,7 +300,9 @@ i {
 }
 
 #section-whoweare img {
+    margin: 1rem;
     width: 250px;
+    border-radius: 1rem;
 }
 #section-evidence {
     margin-top: 2rem;
@@ -494,6 +500,17 @@ i {
 @media screen and (min-width: 768px) {
     /* geral */
 
+    .transition-text {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #transition-text {
+        font-size: 2rem;
+        width: 250px;
+        margin-top: 0.5rem;
+    }
+
     #rotate:hover {
         filter: drop-shadow(0 0 2em var(--secondary-color));
     }
@@ -531,11 +548,16 @@ i {
     }
 
     .btn-faq {
-        width: 100%;
-        height: 75px;
-        font-size: 100%;
+        width: 400px;
+        height: 100px;
+        font-size: 1.5rem;
         text-transform: uppercase;
         font-weight: bold;
+        margin-right: 1rem;
+    }
+
+    .adjust-accordion {
+        width: 600px;
     }
 
     /*  */
@@ -602,6 +624,10 @@ i {
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+    }
+
+    .main-img-services {
+        width: 600px;
     }
 
     .suppliers {
