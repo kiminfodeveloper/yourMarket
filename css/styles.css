@@ -25,6 +25,11 @@ i {
     display: none;
 }
 
+footer p {
+    padding-left: 9%;
+    padding-right: 2rem;
+}
+
 /* header */
 
 .logo-nav {
