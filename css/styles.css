@@ -53,7 +53,7 @@ footer p {
 /* wpp button */
 .whatsapp-button {
     position: fixed;
-    bottom: 60px;
+    bottom: 80px;
     right: 10px;
     width: 50px;
     height: 50px;
@@ -186,8 +186,7 @@ footer p {
     border-radius: 50%;
     z-index: 1;
     position: fixed;
-    right: 1rem;
-    border: 1px solid var(--primary-text-color);
+    right: 10px;
     bottom: 1rem;
     line-height: 0;
     visibility: hidden;
@@ -195,6 +194,9 @@ footer p {
     transition: 0.3s;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     transform: translateY(100%);
+    width: 50px;
+    height: 50px;
+    display: flex;
 }
 
 .back-to-top.show {
@@ -438,7 +440,7 @@ footer p {
 #section-contact-us {
     margin-top: 2rem;
     padding: 1rem;
-    background-color: var(--secondary-color);
+    background-image: var(--background-secondary);
     color: var(--secondary-text-color);
     align-items: center;
     display: flex;
