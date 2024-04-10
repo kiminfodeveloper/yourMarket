@@ -90,47 +90,35 @@ footer p {
 
 .main-image-background {
     background-color: var(--main-color);
-    background-image: url("../img/main-banner-head.png");
+    background-image: url("../img/mainbanner.png");
     background-size: cover;
     background-position: center;
     color: var(--secondary-text-color);
     width: 100%;
     height: 100vh;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .transition-text {
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     display: flex;
+    flex-direction: column;
     color: var(--secondary-text-color);
     text-shadow: 1px 1px 2px var(--primary-text-color);
-    margin-top: 0.7rem;
-    padding: 0.5rem;
 }
 
 #transition-text {
-    font-size: 1.2rem;
-    width: 150px;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    text-shadow: 2px 2px 2px 2px var(--primary-text-color);
 }
 
 .mockaup-mobile {
     width: 310px;
     margin-bottom: 1rem;
-}
-
-#rotate {
-    margin-top: 1rem;
-    width: 75px;
-    transition: 0.7s;
-}
-
-#rotate:hover {
-    transform: rotate(360deg);
-}
-
-#header-primary h1 {
-    margin-top: 15%;
 }
 
 .logo-main {
@@ -254,6 +242,10 @@ footer p {
     flex-direction: column;
     justify-content: center;
     color: var(--secondary-text-color);
+}
+
+.desktop-display-only {
+    display: none;
 }
 
 .title-primary-section {
@@ -495,6 +487,13 @@ footer p {
     transition: 3s;
 }
 
+.wpp {
+    font-size: 1rem;
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+    margin-left: 0.3rem;
+}
+
 .btn-whats:hover {
     background-color: var(--secondary-text-color);
     border: 1px solid var(--secondary-color);
@@ -555,20 +554,11 @@ footer p {
 
 @media screen and (min-width: 768px) {
     /* geral */
-
-    .transition-text {
-        margin-top: 0;
-        padding: 0;
-    }
-
     #transition-text {
         font-size: 2rem;
-        width: 250px;
-        margin-top: 0.5rem;
-    }
-
-    #rotate:hover {
-        filter: drop-shadow(0 0 2em var(--secondary-color));
+        font-weight: 900;
+        margin-top: 1rem;
+        padding: 0.5rem;
     }
 
     .btn-whats {
@@ -686,13 +676,32 @@ footer p {
     }
 
     .main-img-services {
-        width: 600px;
+        width: 700px !important;
+        height: 500px !important;
+    }
+    #section-services-desktop {
+        margin-top: 2rem;
+        background-image: url("../img/suppliers2.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 1rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--secondary-text-color);
+        height: 100vh;
+    }
+    /* mobile-display-only */
+    #section-services {
+        display: none;
     }
 
     .suppliers {
-        padding: 1rem;
-        width: 80%;
-        border: 5px solid var(--secondary-color);
+        width: 90%;
+        background-color: #00000000;
+        gap: 1rem;
     }
 
     .image-suppliers {
@@ -701,6 +710,20 @@ footer p {
 
     .image-suppliers:hover {
         filter: drop-shadow(0 0 2em var(--secondary-color));
+    }
+
+    .center-suppliers {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .center-suppliers img {
+        width: 100px;
+    }
+
+    .colunm-supplier {
+        display: flex;
+        flex-direction: column;
     }
 
     .division-screen {
