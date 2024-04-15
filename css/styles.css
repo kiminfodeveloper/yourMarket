@@ -219,6 +219,7 @@ footer p {
 }
 
 #section-model-stores p {
+    text-align: center;
     margin-top: 1rem;
     text-transform: capitalize;
 }
