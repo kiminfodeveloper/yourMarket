@@ -90,7 +90,7 @@ footer p {
 
 .main-image-background {
     background-color: var(--main-color);
-    background-image: url("../img/mainbanner.png");
+    background-image: url("../img/mainbannercell.png");
     background-size: cover;
     background-position: center;
     color: var(--secondary-text-color);
@@ -565,6 +565,18 @@ footer p {
         font-weight: 900;
         margin-top: 1rem;
         padding: 0.5rem;
+    }
+
+    .main-image-background {
+        background-color: var(--main-color);
+        background-image: url("../img/mainbanner.png");
+        background-size: cover;
+        background-position: center;
+        color: var(--secondary-text-color);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
     }
 
     .btn-whats {
