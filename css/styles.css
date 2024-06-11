@@ -34,6 +34,24 @@
     box-sizing: border-box;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
+/* Cor da barra de rolagem */
+::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(
+        --main-color
+    ); /* Cor do indicador da barra de rolagem */
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background: #ff6ec7; /* Cor do fundo da barra de rolagem */
+}
+
+/* form-styele-modal */
 
 i {
     font-size: 3.5rem;
