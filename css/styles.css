@@ -68,6 +68,14 @@ footer p {
     padding-right: 2rem;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.none-text-transform {
+    text-transform: none !important;
+}
+
 /* wpp button */
 .whatsapp-button {
     position: fixed;
@@ -92,8 +100,13 @@ footer p {
 }
 
 /* header */
+
 .logo-nav {
     width: 200px;
+}
+
+.nav-item {
+    text-transform: uppercase !important ;
 }
 
 #header-primary {
@@ -107,13 +120,14 @@ footer p {
 }
 
 .main-image-background {
+    padding-top: 2rem;
     background-color: var(--main-color);
     background-image: url("../img/mainbannercell.png");
     background-size: cover;
     background-position: center;
     color: var(--secondary-text-color);
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
 }
@@ -129,7 +143,7 @@ footer p {
 #transition-text {
     font-size: 1.5rem;
     font-weight: 1000;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 0.5rem;
     text-shadow: 2px 2px 2px 2px var(--primary-text-color);
 }
@@ -252,6 +266,12 @@ footer p {
     color: var(--secondary-text-color);
 }
 
+.subtitle-benefits {
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem 2rem;
+}
+
 #section-services {
     margin-top: 2rem;
     background-image: url("../img/suppliers.png");
@@ -273,6 +293,7 @@ footer p {
 }
 
 .title-primary-section {
+    font-size: 1rem;
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
@@ -290,6 +311,7 @@ footer p {
 }
 
 .title-secondary-section {
+    font-size: 1rem;
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
@@ -331,6 +353,17 @@ footer p {
     padding: 1rem;
 }
 
+#section-differentials {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-image: var(--background-primary);
+    color: var(--secondary-text-color);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #section-about {
     margin-top: 2rem;
     padding: 1rem;
@@ -346,6 +379,21 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.social-media-text-title {
+    margin-top: 2rem;
+}
+
+.social-media-icons-about {
+    display: flex;
+    gap: 2rem;
+}
+
+#section-differentials img {
+    margin: 1rem;
+    width: 250px;
+    border-radius: 1rem;
 }
 
 #section-about img {
@@ -372,6 +420,16 @@ footer p {
     flex-direction: column;
     color: var(--secondary-text-color);
 }
+.division-quote-image {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-quote {
+    border-radius: 50%;
+    width: 100px;
+}
+
 .quote-texts {
     gap: 1rem;
     display: flex;
@@ -410,7 +468,7 @@ footer p {
 #section-faq {
     text-align: center;
     padding: 1rem;
-    color: var(--main-color);
+    color: var(--secondary-text-color);
 }
 
 .title-and-img-faq {
@@ -440,17 +498,68 @@ footer p {
 .btn-faq:hover {
     background-color: var(--secondary-text-color);
     color: var(--main-color);
-    border: 1px solid var(--main-color);
+    border: 0.5px solid var(--main-color);
 }
 
 .btn-faq-show-text {
-    background-color: var(--main-color);
-    color: var(--secondary-text-color);
+    background-color: var(--secondary-text-color);
+    color: var(--primary-text-color);
+    border: 0.5px solid var(--main-color);
+    transition: 1s;
 }
 
 .btn-faq-show-text:hover {
-    background-color: #ff3fcc;
+    background-color: var(--main-color);
     color: var(--secondary-text-color);
+    border: 1px solid var(--main-color);
+}
+.accordion-body {
+    border: 1px solid var(--main-color);
+}
+
+#section-company-vision {
+    margin-top: 5rem;
+    color: var(--secondary-text-color);
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.center-btn > h3 {
+    border: 1px solid var(--main-color) !important;
+}
+.company-vision {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--primary-text-color) !important;
+    flex-wrap: wrap;
+}
+
+.about-visions {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+.about-visions > i {
+    height: 90px !important;
+}
+.about-visions > h4 {
+    height: 50px !important;
+}
+
+.about-visions > p {
+    height: 250px !important;
+}
+
+.middle-border {
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
 }
 
 #section-contact-us {
@@ -509,6 +618,35 @@ footer p {
     font-size: 1rem;
     font-weight: bold;
     transition: 3s;
+}
+.link-none {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    text-transform: uppercase;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-whats-card {
+    color: var(--secondary-text-color);
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    animation: pulsar 2s infinite ease-in-out;
 }
 
 .wpp {
@@ -592,7 +730,7 @@ footer p {
         background-position: center;
         color: var(--secondary-text-color);
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         display: flex;
         justify-content: center;
     }
@@ -620,6 +758,7 @@ footer p {
     }
 
     .title-primary-section {
+        font-size: 1.5rem;
         width: 400px;
         height: 100px;
         margin-bottom: 3rem;
@@ -627,6 +766,7 @@ footer p {
         font-weight: bold;
     }
     .title-secondary-section {
+        font-size: 1.5rem;
         width: 400px;
         height: 100px;
         text-transform: uppercase;
@@ -693,6 +833,11 @@ footer p {
         padding: 2rem 15%;
     }
 
+    .subtitle-benefits {
+        font-size: 1.5rem;
+        padding: 2rem 15%;
+    }
+
     .model-stores img {
         margin-top: 1rem;
         width: 450px;
@@ -720,6 +865,10 @@ footer p {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+
+    #section-differentials img {
+        width: 600px;
     }
 
     #section-about img {
@@ -750,6 +899,12 @@ footer p {
         justify-content: center;
         padding: 1rem;
         gap: 1rem;
+    }
+
+    .middle-border {
+        border: none;
+        border-left: 1px solid var(--main-color);
+        border-right: 1px solid var(--main-color);
     }
 
     .contact-subtitle {
