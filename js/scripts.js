@@ -47,3 +47,9 @@ function scrollToTop() {
 window.addEventListener("scroll", function () {
     backToTop();
 });
+
+function generatedNameCard() {
+    let name = document.getElementById("creditCardName").value;
+    document.getElementById("nameFinally").textContent = name;
+    document.getElementById("messageCreditCardApprove").style.display = "block";
+}

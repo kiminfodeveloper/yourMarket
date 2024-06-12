@@ -411,6 +411,42 @@ footer p {
     width: 300px;
 }
 
+.credit-card-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+
+#creditCardName {
+    border: 1px solid var(--secondary-color);
+    color: #a5027f;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    height: 70px;
+}
+
+.btn-test-credit-card {
+    height: 50px;
+    border: 1px solid var(--main-color);
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+
+#messageCreditCardApprove {
+    display: none;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 #section-evidence {
     margin-top: 2rem;
     background-image: var(--background-primary-left);

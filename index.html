@@ -25,6 +25,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         />
+        <link rel="stylesheet" href="css/creditcard.css" />
     </head>
     <body>
         <!-- header -->
@@ -93,6 +94,7 @@
                     </div>
                 </div>
             </nav>
+
             <div id="header-primary">
                 <div class="main-image-background">
                     <div class="transition-text">
@@ -111,10 +113,10 @@
         <!-- main section -->
         <main id="main-content">
             <section id="section-description">
-                <img
+                <!-- <img
                     src="https://i.ibb.co/Vq1bwQP/carrousel2.png"
                     alt="Imagem ilustrativa"
-                />
+                /> -->
                 <div>
                     <h3>A praticidade que você procura!</h3>
                     <p>
@@ -234,7 +236,7 @@
         ></a>
         <!-- wpp btn -->
         <a
-            href="https://wa.me/+5511915876212"
+            href="https://wa.me/+5511937717295"
             class="whatsapp-button"
             target="_blank"
         >
@@ -275,7 +277,7 @@
                 compartilhado com outra finalidade (salão de jogos, por exemplo)
                 a partir de 5m².
             </p>
-            <a target="_blank" href="https://wa.me/+5511915876212"
+            <a target="_blank" href="https://wa.me/+5511937717295"
                 ><button class="btn-whats">Fale conosco</button></a
             >
         </section>
@@ -385,7 +387,7 @@
                     </div>
                 </div>
             </div>
-            <a target="_blank" href="https://wa.me/+5511915876212"
+            <a target="_blank" href="https://wa.me/+5511937717295"
                 ><button class="btn-whats-secondary">Eu quero</button></a
             >
         </section>
@@ -404,6 +406,7 @@
                 />
                 <div class="about-text-information">
                     <h4>Your Market</h4>
+
                     <p>
                         Oferecemos um cartão próprio do Mercado. Atendimento
                         100% humanizado, não trabalhamos com bot Trava de
@@ -419,9 +422,97 @@
                             Eu quero esse cartão!
                         </button>
                     </a>
+                    <div class="credit-card-container">
+                        <p class="credit-card-example">
+                            Teste seu nome no nosso cartão:
+                        </p>
+                        <input
+                            id="creditCardName"
+                            type="text"
+                            placeholder="Seu nome aqui"
+                        />
+                        <button
+                            class="btn-test-credit-card"
+                            onclick="generatedNameCard()"
+                        >
+                            Testar
+                        </button>
+                        <p id="messageCreditCardApprove">
+                            verifique o nome no cartão abaixo, é apenas algo
+                            ilustrativo.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- credit card -->
+        <div class="cc-container">
+            <div class="cc-card">
+                <div class="cc-card-inner">
+                    <div class="cc-front">
+                        <img
+                            src="https://i.ibb.co/VJNKNhb/map.png"
+                            class="cc-map-img"
+                        />
+                        <div class="cc-row">
+                            <img
+                                src="https://i.ibb.co/G9pDnYJ/chip.png"
+                                width="60px"
+                            />
+                            <img
+                                src="https://i.ibb.co/WHZ3nRJ/visa.png"
+                                width="60px"
+                            />
+                        </div>
+                        <div class="cc-row cc-card-no">
+                            <p>0000</p>
+                            <p>0000</p>
+                            <p>0000</p>
+                            <p>0000</p>
+                        </div>
+                        <div class="cc-row cc-name">
+                            <p id="nameFinally">NOME E SOBRENOME</p>
+                            <p>00 / 00</p>
+                        </div>
+                        <div class="cc-row cc-card-holder">
+                            <p>CRÉDITO</p>
+                            <p>VÁLIDO SOMENTE NO YourMarket</p>
+                        </div>
+                    </div>
+                    <div class="cc-back">
+                        <img
+                            src="https://i.ibb.co/VJNKNhb/map.png"
+                            class="cc-map-img"
+                        />
+                        <div class="cc-bar"></div>
+                        <div class="cc-row cc-card-cvv">
+                            <div>
+                                <img
+                                    src="https://i.ibb.co/S6JG8px/pattern.png"
+                                />
+                            </div>
+                            <p>000</p>
+                        </div>
+                        <div class="cc-row cc-card-text">
+                            <p>
+                                Está é apenas uma ilustração visual do nosso
+                                cartão para saber mais entre em contato no botão
+                                acima
+                            </p>
+                        </div>
+                        <div class="cc-row cc-signature">
+                            <p>ASSINATURA PERSONALIZADA</p>
+                            <img
+                                src="https://i.ibb.co/WHZ3nRJ/visa.png"
+                                width="50px"
+                                style="margin-bottom: 1rem"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end credit card -->
         <!-- section about -->
         <section id="section-about">
             <h3 class="title-secondary-section">Sobre nós</h3>
@@ -820,7 +911,7 @@
                 </div>
                 <div class="form-container-contact">
                     <h4>Enviar mensagem:</h4>
-                    <a target="_blank" href="https://wa.me/+5511915876212"
+                    <a target="_blank" href="https://wa.me/+5511937717295"
                         ><button class="btn-whats">
                             WhatsApp
                             <i
@@ -869,7 +960,7 @@
                 <li class="ms-3">
                     <a
                         class="text-muted"
-                        href="https://wa.me/+5511915876212"
+                        href="https://wa.me/+5511937717295"
                         target="_blank"
                         ><i
                             class="bi bi-whatsapp"
