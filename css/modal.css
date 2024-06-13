@@ -1,0 +1,131 @@
+/* Estilo do modal (fundo) */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1; /* Fica no topo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Habilita a rolagem se necessário */
+    background-color: rgb(0, 0, 0); /* Cor de fundo */
+    background-color: rgba(0, 0, 0, 0.4); /* Cor de fundo com opacidade */
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% do topo e centralizado horizontalmente */
+    padding: 4rem;
+    border: 1px solid #888;
+    width: 80%; /* Pode ser mais ou menos, dependendo do design */
+    color: var(--primary-text-color);
+}
+
+.modal-content > h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 3rem;
+}
+
+.modal-content > p {
+    width: 100%;
+    background-color: #88888829;
+    padding: 1rem;
+}
+
+.modal-content > p > span {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+/* O botão fechar (x) */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* cookie modal */
+
+/* Estilo do modal de cookie */
+.cookie-modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f1f1f1b5;
+    z-index: 1000; /* Fica no topo */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cookie-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.cookie-modal button {
+    margin: 0 5px;
+}
+
+.modalCookies {
+    width: auto;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: var(--main-color);
+    border: none;
+    color: var(--secondary-text-color);
+    text-transform: uppercase;
+}
+
+/* policies and privacy */
+
+/* Estilo do modal */
+.pp-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pp-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.pp-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.pp-close:hover,
+.pp-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

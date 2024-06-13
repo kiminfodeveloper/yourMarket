@@ -26,8 +26,32 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         />
         <link rel="stylesheet" href="css/creditcard.css" />
+        <link rel="stylesheet" href="css/modal.css" />
     </head>
     <body>
+        <!-- Modal de Cookie -->
+        <div id="cookieModal" class="cookie-modal">
+            <div class="cookie-content">
+                <p>
+                    Usamos cookies para melhorar sua experiência. Ao continuar
+                    navegando, você concorda com a nossa
+                    <a id="ppPrivacyPolicyLink" href="#ppPrivacyPolicyModal"
+                        >Política de Privacidade</a
+                    >.
+                </p>
+
+                <button class="modalCookies" id="acceptAllCookies">
+                    Aceitar Todos
+                </button>
+                <button class="modalCookies" id="acceptEssentialCookies">
+                    Aceitar Essenciais
+                </button>
+                <button class="modalCookies" id="declineCookies">
+                    Recusar
+                </button>
+            </div>
+        </div>
+
         <!-- header -->
         <header>
             <!-- navbar -->
@@ -81,7 +105,7 @@
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"
+                                <a class="nav-link" href="#section-faq"
                                     >Dúvidas Frequentes</a
                                 >
                             </li>
@@ -138,7 +162,7 @@
                 />
             </section>
         </main>
-        <!-- carousel -->
+        <!-- carousel
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button
@@ -226,7 +250,7 @@
                 ></span>
                 <span class="visually-hidden"></span>
             </button>
-        </div>
+        </div> -->
         <!-- back to top -->
         <a class="back-to-top" onclick="scrollToTop()"
             ><i
@@ -305,8 +329,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Fácil de usar</h5>
                             <p class="card-text">
-                                Caixa físico com sistema de fácil uso: escolheu,
-                                escaneou, pagou.
+                                Operação simples, caixa físico com sistema
+                                fácil. Pegou o produto, Escaneou, Pagou.
                             </p>
                         </div>
                     </div>
@@ -315,8 +339,12 @@
                         <div class="card-body">
                             <h5 class="card-title">Valorização</h5>
                             <p class="card-text">
-                                Agrega mais valor ao condomínio, trazendo
-                                conforto aos moradores.
+                                Agrega valor ao condomínio Segundo especialistas
+                                ouvidos pelo Estadão, as lojas geram valorização
+                                adicional aos imóveis de 5% a 10%, chegando a
+                                até R$ 50 mil. Veja a matéria completa
+                                Mercadinho de condomínio vira a bola da vez e
+                                pode valorizar imóvel em até R$ 50 mil.
                             </p>
                         </div>
                     </div>
@@ -326,7 +354,8 @@
                             <h5 class="card-title">Conveniência</h5>
                             <p class="card-text">
                                 Nossos mercados autônomos funcionam 7 dias por
-                                semana, 24h por dia.
+                                semana, 24h por dia. Your Market te salva na
+                                hora e com o que você mais precisa.
                             </p>
                         </div>
                     </div>
@@ -346,8 +375,10 @@
                                 Parceria com grandes fornecedores
                             </h5>
                             <p class="card-text">
-                                Possuímos os melhores fornecedores, negociações
-                                e mix de produtos para atender nossos clientes.
+                                Mix de produtos, variedade de + de 1.0000 itens
+                                diferentes. Possui os melhores fornecedores,
+                                negociações. Personalização dos produtos
+                                Garantimos preços compatíveis e promoções.
                             </p>
                         </div>
                     </div>
@@ -368,10 +399,14 @@
                     <div class="card" style="width: 18rem; margin-top: 1rem">
                         <i class="bi bi-shop"></i>
                         <div class="card-body">
-                            <h5 class="card-title">Mix de Produtos e Vendas</h5>
+                            <h5 class="card-title">
+                                Acessibilidade e Praticidade
+                            </h5>
                             <p class="card-text">
-                                Suporte na escolha e atualização do mix de
-                                produtos conforme o perfil do local e clientes.
+                                Acesso para todas idades, moradores, visitantes
+                                colaboradores Facilidade na compra, com ou sem
+                                aplicativo. Economia de gasolina e tempo sem
+                                transito, sem filas.
                             </p>
                         </div>
                     </div>
@@ -473,7 +508,7 @@
                         </div>
                         <div class="cc-row cc-card-holder">
                             <p>CRÉDITO</p>
-                            <p>VÁLIDO SOMENTE NO YourMarket</p>
+                            <p>COMPRA NACIONAL</p>
                         </div>
                     </div>
                     <div class="cc-back">
@@ -859,17 +894,74 @@
                 <div class="about-visions">
                     <i class="bi bi-flag"></i>
                     <h4>Valores</h4>
-                    <p>
-                        Valor1 <br />
-                        Valor1 <br />
-                        Valor1 <br />
-                        Valor1 <br />
-                        Valor1 <br />
-                        Valor1 <br />
+                    <p class="mission-values">
+                        <span>></span> Inovação <br />
+                        <span>></span> Qualidade <br />
+                        <span>></span> Conveniência <br />
+                        <span>></span> Sustentabilidade <br />
+                        <span>></span> Segurança <br />
+                        <span>></span> Comunidade <br />
+                        <span>></span> Transparência <br />
+                        <span>></span> Comunidade <br />
                     </p>
+                    <button id="modalMissionValues">Saiba mais</button>
                 </div>
             </div>
         </section>
+        <!-- O Modal -->
+        <div id="myModal" class="modal">
+            <!-- Conteúdo do modal -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Valores</h4>
+                <p>
+                    <span>1 - Inovação:</span> Comprometidos com a implementação
+                    das mais recentes tecnologias para facilitar a experiência
+                    de compra autônoma.
+                </p>
+                <p>
+                    <span>2 - Qualidade:</span> Oferecer produtos selecionados e
+                    de alta qualidade para atender às necessidades dos
+                    moradores.
+                </p>
+                <p>
+                    <span>3 - Conveniência:</span> Disponibilidade 24/7,
+                    garantindo que os moradores possam fazer suas compras a
+                    qualquer hora do dia.
+                </p>
+                <p>
+                    <span>4 - Sustentabilidade:</span> Promover práticas
+                    sustentáveis, desde a seleção de produtos até o descarte de
+                    resíduos.
+                </p>
+                <p>
+                    <span>5 - Segurança:</span> Garantir um ambiente seguro e
+                    protegido para todos os usuários do mercado.
+                </p>
+                <p>
+                    <span>6 - Comunidade:</span> Fomentar um senso de comunidade
+                    e colaboração entre os moradores do condomínio.
+                </p>
+                <p>
+                    <span>7 - Transparência:</span> Manter comunicação aberta e
+                    transparente com os clientes, assegurando confiança e
+                    satisfação.
+                </p>
+                <p>
+                    Esses elementos podem ajudar a guiar as operações e decisões
+                    do Your Market, além de comunicar claramente aos clientes e
+                    stakeholders os princípios fundamentais da empresa.
+                </p>
+                <a target="_blank" href="https://wa.me/+5511937717295"
+                    ><button class="btn-whats">
+                        WhatsApp
+                        <i
+                            class="bi bi-whatsapp"
+                            style="font-size: 1.5rem; margin-left: 0.5rem"
+                        ></i></button
+                ></a>
+            </div>
+        </div>
         <!-- contact-us -->
         <section id="section-contact-us">
             <h3 class="title-secondary-section">Fale conosco</h3>
@@ -935,8 +1027,9 @@
                 </div>
             </div>
         </section>
+
         <!-- footer -->
-        <footer
+        <!-- <footer
             class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
         >
             <div class="col-md-4 d-flex align-items-center">
@@ -983,6 +1076,87 @@
                 </li>
             </ul>
             <p style="text-align: center">developed by KIMINFOTEC ©</p>
+        </footer> -->
+
+        <footer>
+            <div class="container-footer-content first">
+                <img
+                    class="footer-logo"
+                    src="./img/logo.PNG"
+                    alt="yourmarket"
+                />
+                <div>
+                    <a
+                        class="text-muted"
+                        href="https://wa.me/+5511937717295"
+                        target="_blank"
+                        ><i
+                            class="bi bi-whatsapp"
+                            style="font-size: 2rem; margin: 1rem"
+                        ></i
+                    ></a>
+                    <a
+                        class="text-muted"
+                        href="https://wa.me/+5511937717295"
+                        target="_blank"
+                        ><i
+                            class="bi bi-instagram"
+                            style="font-size: 2rem; margin: 1rem"
+                        ></i
+                    ></a>
+                    <a
+                        class="text-muted"
+                        href="https://wa.me/+5511937717295"
+                        target="_blank"
+                        ><i
+                            class="bi bi-facebook"
+                            style="font-size: 2rem; margin: 1rem"
+                        ></i
+                    ></a>
+                </div>
+            </div>
+            <div class="container-footer-content">
+                <p class="summary-map">Mapa do Site</p>
+                <a href="#header-primary"><p>Início da Your Market</p></a>
+                <a href="#section-about"><p>Sobre a Your Market</p></a>
+                <a href="#section-services"
+                    ><p>Fornecedores da Your Market</p></a
+                >
+                <a href="#section-differentials"
+                    ><p>Diferencial da Your Market</p></a
+                >
+                <a href="#section-faq"><p>FAQ da Your Market</p></a>
+                <a href="#section-contact-us"
+                    ><p>Entre em contato com a Your Market</p></a
+                >
+                <!-- policies and privacy -->
+                <!-- Botão para abrir o modal de Política de Privacidade -->
+                <button id="ppPrivacyPolicyBtn">Política de Privacidade</button>
+
+                <!-- O Modal de Política de Privacidade -->
+                <div id="ppPrivacyPolicyModal" class="pp-modal">
+                    <!-- Conteúdo do modal -->
+                    <div class="pp-modal-content">
+                        <span class="pp-close">×</span>
+                        <h2>Política de Privacidade</h2>
+                        <p>
+                            Este é um resumo da nossa Política de Privacidade...
+                        </p>
+                        <!-- Adicione mais conteúdo sobre a política aqui -->
+                    </div>
+                </div>
+            </div>
+            <div class="container-footer-content">
+                <p class="summary-map">Nossa Sede</p>
+                <p>São Paulo – Capital</p>
+                <p>São Paulo - Mogi das Cruzes</p>
+            </div>
+
+            <div class="container-footer-content last">
+                <p class="summary-map">Mais Informações</p>
+                <p>© 2024 TODOS OS DIREITOS RESERVADOS, Your Market</p>
+                <p>developed by KIMINFOTEC ©</p>
+            </div>
         </footer>
         <!-- script -->
         <script

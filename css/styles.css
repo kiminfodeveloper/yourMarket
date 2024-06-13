@@ -534,23 +534,27 @@ footer p {
 .btn-faq:hover {
     background-color: var(--secondary-text-color);
     color: var(--main-color);
-    border: 0.5px solid var(--main-color);
+    border: none;
+    border-bottom: 0.5px solid var(--main-color);
 }
 
 .btn-faq-show-text {
+    border: none;
     background-color: var(--secondary-text-color);
     color: var(--primary-text-color);
-    border: 0.5px solid var(--main-color);
+    border-bottom: 0.5px solid var(--main-color);
     transition: 1s;
 }
 
 .btn-faq-show-text:hover {
     background-color: var(--main-color);
     color: var(--secondary-text-color);
-    border: 1px solid var(--main-color);
+    border: none;
+    border-bottom: 1px solid var(--main-color);
 }
 .accordion-body {
-    border: 1px solid var(--main-color);
+    border: none;
+    border-bottom: 1px solid var(--main-color);
 }
 
 #section-company-vision {
@@ -574,7 +578,7 @@ footer p {
 }
 
 .about-visions {
-    width: 250px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -591,6 +595,32 @@ footer p {
 
 .about-visions > p {
     height: 250px !important;
+}
+
+.mission-values {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.mission-values > span {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+#modalMissionValues {
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--secondary-color);
+    width: 150px;
+    height: 50px;
+    color: var(--secondary-text-color);
+    transition: 1s;
+}
+
+#modalMissionValues:hover {
+    background-color: var(--secondary-text-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
 }
 
 .middle-border {
@@ -748,6 +778,52 @@ footer p {
     background-color: #ff9d4e;
 }
 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.container-footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid var(--main-color);
+}
+.summary-map {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.container-footer-content > a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+}
+
+.container-footer-content > a > p:hover {
+    border-bottom: 1px solid var(--main-color);
+}
+
+#ppPrivacyPolicyBtn {
+    margin: auto;
+    border: none;
+    width: 200px;
+    height: 30px;
+    color: var(--secondary-text-color);
+    background-color: var(--main-color);
+    border-radius: 0.5rem;
+}
+.first {
+    border-top: none;
+}
+
 /* desktop */
 
 @media screen and (min-width: 768px) {
@@ -771,6 +847,10 @@ footer p {
         justify-content: center;
     }
 
+    #main-content p {
+        font-size: 1.5rem !important;
+    }
+
     .btn-whats {
         width: 175px;
         height: 70px;
@@ -790,7 +870,7 @@ footer p {
     }
 
     #header-primary h1 {
-        margin-top: 3%;
+        margin-top: -3%;
     }
 
     .title-primary-section {
@@ -866,16 +946,16 @@ footer p {
 
     #section-model-stores p {
         font-size: 1.5rem;
-        padding: 2rem 15%;
+        padding: 1rem 10%;
     }
 
     .subtitle-benefits {
         font-size: 1.5rem;
-        padding: 2rem 15%;
+        padding: 1rem 10%;
     }
 
     .model-stores img {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         width: 450px;
         height: 300px;
     }
@@ -903,10 +983,20 @@ footer p {
         justify-content: center;
     }
 
+    #section-about {
+        background-image: url("../img/background-about.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     #section-about img {
         width: 400px;
     }
 
+    .title-and-img-faq img {
+        width: 435px;
+        margin-right: 1rem;
+    }
     .about-text-information h4 {
         text-align: left;
     }
@@ -937,6 +1027,7 @@ footer p {
         border: none;
         border-left: 1px solid var(--main-color);
         border-right: 1px solid var(--main-color);
+        width: 400px;
     }
 
     .contact-subtitle {
@@ -952,5 +1043,14 @@ footer p {
 
     .send-direct-message {
         font-size: 1.5rem;
+    }
+    .container-footer-content {
+        border: none;
+        width: 300px;
+        padding: 0.5rem;
+        border-right: 1px solid var(--main-color);
+    }
+    .last {
+        border: none;
     }
 }
