@@ -122,7 +122,7 @@ footer p {
 .main-image-background {
     padding-top: 2rem;
     background-color: var(--main-color);
-    background-image: url("../img/mainbannercell.png");
+    background-image: url("../img/mainbannercell.webp");
     background-size: cover;
     background-position: center;
     color: var(--secondary-text-color);
@@ -274,7 +274,7 @@ footer p {
 
 #section-services {
     margin-top: 2rem;
-    background-image: url("../img/suppliers.png");
+    background-image: url("../img/suppliers.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -837,7 +837,7 @@ footer {
 
     .main-image-background {
         background-color: var(--main-color);
-        background-image: url("../img/mainbanner.png");
+        background-image: url("../img/mainbanner.webp");
         background-size: cover;
         background-position: center;
         color: var(--secondary-text-color);
@@ -984,7 +984,7 @@ footer {
     }
 
     #section-about {
-        background-image: url("../img/background-about.png");
+        background-image: url("../img/background-about.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
