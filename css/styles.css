@@ -462,7 +462,10 @@ footer p {
 }
 
 .image-quote {
+    margin-right: 1rem;
     border-radius: 50%;
+    border: 1px solid var(--main-color);
+    padding: 0.4rem;
     width: 100px;
 }
 
@@ -493,12 +496,20 @@ footer p {
 }
 
 .quote-text h4 {
+    margin-right: 1rem;
     margin-top: 1rem;
     text-align: center;
 }
 
 .quote-text p {
+    text-align: justify;
     margin-right: 1rem;
+}
+.body-text-quote {
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #c0c0c0ca;
+    padding: 0.5rem;
 }
 
 #section-faq {
