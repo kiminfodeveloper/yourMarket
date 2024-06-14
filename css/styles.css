@@ -822,6 +822,7 @@ footer {
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
+    justify-content: center;
 }
 
 .footer-logo {
