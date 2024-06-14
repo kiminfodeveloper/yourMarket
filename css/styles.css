@@ -272,6 +272,10 @@ footer p {
     padding: 2rem 2rem;
 }
 
+.card-title {
+    text-align: center;
+}
+
 #section-services {
     margin-top: 2rem;
     background-image: url("../img/suppliers.webp");
@@ -362,6 +366,30 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.container-information-differentials {
+    background-color: var(--secondary-text-color);
+    padding: 1.4rem;
+    color: var(--secondary-color);
+    border-radius: 1rem;
+    text-align: justify;
+}
+
+.container-information-differentials h4 {
+    font-weight: bold;
+    margin: 2rem;
+    color: var(--main-color);
+}
+
+.container-information-differentials > p {
+    font-size: 1.2rem;
+}
+
+.container-information-differentials > p > span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--main-color);
 }
 
 #section-about {
@@ -1063,5 +1091,9 @@ footer {
     }
     .last {
         border: none;
+    }
+    #section-differentials img {
+        width: 350px;
+        margin-top: -20rem;
     }
 }
