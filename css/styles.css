@@ -533,11 +533,20 @@ footer p {
     text-align: justify;
     margin-right: 1rem;
 }
+
+.center-quote-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
 .body-text-quote {
     width: 100%;
     border-radius: 1rem;
     background-color: #c0c0c0ca;
     padding: 0.5rem;
+    color: var(--primary-text-color);
+    height: 50%;
 }
 
 #section-faq {
