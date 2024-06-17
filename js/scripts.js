@@ -148,4 +148,11 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Impede que o link navegue para o href
         ppModal.style.display = "block";
     };
+
+    document.getElementById("eModal").style.display = "block";
+
+    // Adiciona um evento de clique para fechar o modal
+    document.querySelector(".eClose").addEventListener("click", function () {
+        document.getElementById("eModal").style.display = "none";
+    });
 });
