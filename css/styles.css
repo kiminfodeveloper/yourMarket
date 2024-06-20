@@ -1033,7 +1033,7 @@ footer {
     }
 
     #section-about {
-        background-image: url("../img/background-about.webp");
+        background-color: var(--secondary-color);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
